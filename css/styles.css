@@ -38,6 +38,10 @@ body {
   min-height: 2592px;
 }
 
+.bg-dark {
+  background-color: var(--navy-blue);
+}
+
 a {
   text-decoration: none;
 }
@@ -57,6 +61,18 @@ h2 {
 
 ul {
   list-style-type: none;
+}
+
+.container {
+  /* width: 1440px; */
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.d-flex {
+    display: flex;
 }
 /* END OF GENERAL */
 
@@ -116,7 +132,7 @@ ul {
   color: var(--ocean);
 }
 
-.navigation {
+/* .navigation {
   /* width: 1440px; */
   display: flex;
   height: 72px;
@@ -126,22 +142,37 @@ ul {
   box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+} */
+
+
+.header .d-flex {
+    align-items: center;
 }
 
-.header-link {
+/* .header-link {
   display: flex;
   flex-direction: row;
+} */
+
+.header-container {
+    display: flex;
+    align-items: center;
 }
-.pages {
+
+.header .list {
+    gap: 40px;
+}
+
+/* .pages {
   display: flex;
   flex-direction: row;
   gap: 40px;
-}
+} */
 
-.contact {
+/* .contact {
   display: flex;
   flex-direction: row;
-}
+} */
 
 .logo {
   margin: 25.5px 76px 25.5px 156px;
@@ -164,6 +195,59 @@ ul {
   background-color: var(--iris);
   position: relative;
   top: 20px;
+}
+
+.mobile-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 15px;
+}
+
+.mobile-menu-container {
+  position: relative;
+  height: 100%;
+  padding: 40px;
+}
+
+.mobile-navbar {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mobile-menu {
+  display: none;
+  position: relative;
+}
+
+.mobile-links {
+  list-style-type: none;
+}
+
+.mobile-link {
+  font-size: 36px;
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--navyblue);
+  margin-bottom: 40px;
+  display: inline-block;
+}
+
+.mobile-contact {
+  color: var(--navyblue);
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 48px;
+}
+
+.mobile-link.mobile-active {
+  color: var(--ocean);
+}
+
+.d-flex {
+  display: flex;
 }
 
 /* END OF NAVIGATION BAR */
@@ -893,13 +977,6 @@ h4 {
 /* END OF FOOTER SECTION */
 
 /* MEDIA QUERY */
-
-.container {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 @media (min-width: 428px) {
   .container {

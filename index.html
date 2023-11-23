@@ -21,14 +21,13 @@
     <header class="navigation header desktop-nav">
       <div class="container header-container">
         <div class="d-flex">
-          <a class="logo" href="./index.html"
+          <a class="logo link" href="./index.html"
             ><span class="logo-web">WEB</span>
             <span class="logo-studio">STUDIO</span></a
           >
 
           <nav class="header-link">
-            <!-- Navigation to other pages -->
-            <ul class="pages">
+            <ul class="pages list">
               <li>
                 <a class="pages-link active" href="./index.html">Studio</a>
               </li>
@@ -38,9 +37,8 @@
               <li><a class="pages-link" href=".contacts">Contacts</a></li>
             </ul>
           </nav>
-        </div>
+  
 
-        <!-- Contact details -->
         <ul class="contact">
           <li class="details">
             <a class="contact-details" href="mailto:info@devstudio.com"
@@ -54,14 +52,15 @@
           </li>
         </ul>
       </div>
+            </div>
     </header>
 
-    <header class="mobile-nav">
+    <!-- <header class="mobile-nav">
       <div class="container mobile-container">
-        <a href="" class="logo link">
-          <span class="logo-web">Web</span
-          ><span class="logo-studio-nav">studio</span>
-        </a>
+        <a class="logo link" href="./index.html"
+            ><span class="logo-web">WEB</span>
+            <span class="logo-studio">STUDIO</span></a
+          >
         <svg
           width="32"
           height="22"
@@ -72,7 +71,7 @@
           <use href="./images/icons.svg#hamburger"></use>
         </svg>
       </div>
-    </header>
+    </header> -->
 
     <div class="js-menu-container mobile-menu" id="mobile-menu">
       <div class="mobile-menu-container">
@@ -137,7 +136,7 @@
     <main>
       <!-- HERO SECTION -->
       <section class="hero">
-        <div class="hero-slogan">
+        <div class="hero-slogan container">
           <h1>
             Effective Solutions <br />
             for Your Business
@@ -311,6 +310,7 @@
 
       <!-- TEAM SECTION -->
       <section class="team">
+        <div class="container">
         <div class="team-sub-title">
           <h2>Our Team</h2>
         </div>
@@ -520,10 +520,12 @@
             </div>
           </li>
         </ul>
+        </div>
       </section>
 
       <!-- CUSTOMERS SECTION -->
       <section class="customers">
+        <div class="container">
         <h2>Customers</h2>
 
         <div class="customer-icons">
@@ -546,15 +548,16 @@
             <use xlink:href="images/icons.svg#icon-Client-6"></use>
           </svg>
         </div>
+        </div>
       </section>
     </main>
 
     <!-- common page footer -->
 
-    <footer class="footer">
+    <footer class="footer bg-dark d-flex">
       <div class="container">
         <div class="footer-inner">
-          <div class="footer-text">
+          <!-- <div class="footer-text"> -->
             <div class="left-footer">
               <a href="#"
                 ><span class="logo-web">WEB</span>
@@ -612,7 +615,8 @@
                 </a>
               </div>
             </div>
-          </div>
+          <!-- </div> -->
+        </div>
 
           <div class="right-footer">
             <p class="footer-subscribe-text">Subscribe</p>
@@ -626,10 +630,16 @@
               </button>
             </form>
           </div>
-        </div>
+
       </div>
     </footer>
 
-    <script src="./js/modal.js"></script>
+  <script
+            defer
+            src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+            integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+            crossorigin="anonymous"></script>
+        <script type="text/javascript" src="./js/mobile-menu.js"></script>
+        <script type="text/javascript" src="./js/modal.js"></script>
   </body>
 </html>
