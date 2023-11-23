@@ -804,10 +804,6 @@ body {
   .footer-subscribe-text {
     margin-bottom: 16px;
   }
-
-  .project {
-    flex-basis: 360px;
-  }
 }
 
 @media (min-width: 768px) {
@@ -921,8 +917,8 @@ body {
     display: none;
   }
 
-  .project {
-    flex-basis: calc(100% / 2 - 30px);
+  /* .project {
+    flex-basis: calc(100% / 2 - 30px); */
   }
 
   @media (max-width: 767px) {
@@ -971,6 +967,10 @@ body {
 }
 
 @media (max-width: 427px) {
+  .project {
+    width: 360px;
+  }
+
   .hero-text {
     font-size: 36px;
     letter-spacing: 0.72px;
@@ -980,4 +980,10 @@ body {
   .about-item h3 {
     text-align: center;
   }
+}
+
+.project-cards{
+  max-width: 1200px;
+   margin-left: auto;
+  margin-right: auto;
 }
