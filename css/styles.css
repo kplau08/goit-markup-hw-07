@@ -236,7 +236,7 @@ body {
   padding-bottom: 188px;
   text-align: center;
 
-  background-image: url("/images/optimized/hero-image-optimized.jpg");
+  background-image: url("../images/optimized/hero-image-optimized.jpg");
   background-size: cover;
 }
 
@@ -789,6 +789,13 @@ body {
     text-align: center;
   }
 
+  .footer-left,
+  .footer-social,
+  .footer-sub {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .projects {
     margin-bottom: 48px;
   }
@@ -919,52 +926,51 @@ body {
 
   /* .project {
     flex-basis: calc(100% / 2 - 30px); */
+}
+
+@media (max-width: 767px) {
+  .desktop-nav {
+    display: none;
   }
 
-  @media (max-width: 767px) {
-    .desktop-nav {
-      display: none;
-    }
-
-    .mobile-menu.is-open {
-      transform: translateX(0);
-    }
-
-    .js-close-menu {
-      position: absolute;
-      top: 10px;
-      right: 25px;
-    }
-
-    .mobile-menu {
-      top: 0;
-      display: block;
-      height: 100vh;
-      width: 100%;
-      position: fixed;
-      background-color: white;
-      transform: translateX(100%);
-      transition: transform 250ms ease-in-out;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    .what-we-do {
-      display: none;
-    }
-
-    .about-item h3 {
-      font-size: 36px;
-      margin-bottom: 8px;
-    }
-    .about-item p {
-      margin-top: 0;
-    }
+  .mobile-menu.is-open {
+    transform: translateX(0);
   }
 
-  /* .footer-inner {
+  .js-close-menu {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+  }
+
+  .mobile-menu {
+    top: 0;
+    display: block;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .what-we-do {
+    display: none;
+  }
+
+  .about-item h3 {
+    font-size: 36px;
+    margin-bottom: 8px;
+  }
+  .about-item p {
+    margin-top: 0;
+  }
+}
+
+/* .footer-inner {
     justify-content: center;
   } */
-}
 
 @media (max-width: 427px) {
   .project {
@@ -982,8 +988,8 @@ body {
   }
 }
 
-.project-cards{
+.project-cards {
   max-width: 1200px;
-   margin-left: auto;
+  margin-left: auto;
   margin-right: auto;
 }
